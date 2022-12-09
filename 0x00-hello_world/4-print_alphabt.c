@@ -9,18 +9,17 @@
  *Return: zero or number value
  */
 
+char ch;
+
 int main(void)
 {
-	char sm = 'a';
-	char cp = 'A';
-
-	for (sm = 'a'; sm <= 'z'; sm++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(sm);
-	}
-	for(cp='A'; cp <= 'Z'; cp++)
-	{
-		putchar(cp);
+		if (ch == 'e' || ch == 'q')
+		{
+			continue;
+		}
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
