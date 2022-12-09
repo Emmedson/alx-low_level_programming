@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - main document function to determin number type
  *more headers goes there
@@ -19,7 +20,6 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	} else
-		(n < 0)
 	{
 		printf("%d is nagetive\n", n);
 	}
