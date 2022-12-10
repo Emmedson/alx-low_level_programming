@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - main document function to determin number type
- *more headers goes there
+ *
+ *
+ * Return: Zero
  */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
@@ -21,7 +23,7 @@ int main(void)
 		printf("%d is zero\n", n);
 	} else
 	{
-		printf("%d is nagetive\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
