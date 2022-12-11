@@ -9,10 +9,10 @@
  *Return: zero or number value
  */
 
-char ch;
-
 int main(void)
 {
+	char ch;
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch == 'e' || ch == 'q')
