@@ -6,7 +6,7 @@
  *Return: zero or number value
  */
 
-void print_alphabet(void)
+int print_alphabet(void)
 {
 	char ch;
 
