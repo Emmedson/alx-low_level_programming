@@ -2,11 +2,11 @@
 /**
  * _abs - function to print sign of a number
  *
- * @int: character to be checked
+ * @n: character to be checked
  *Return: zero or number value
  */
 
-int _abs(int)
+int _abs(int n)
 {
 
 	if (n < 0)
@@ -14,6 +14,6 @@ int _abs(int)
 		n = n * (-1);
 	}
 
-	return (0);
+	return (n);
 
 }
