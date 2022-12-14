@@ -1,28 +1,22 @@
 #include "main.h"
 /**
- * print_sign - function to print sign of a number
+ * print_last_digit  - function to print sign of a number
  *
  * @n: character to be checked
  *Return: zero or number value
  */
 
-int print_sign(int n)
+int print_last_digit(int n)
 {
+	int last_digit;
 
-	if (n > 0)
+	last_digit = n % 10;
+	if (last_digit < 0)
 	{
-		_putchar ('+');
-		return (1);
-	} else if (n == 0)
-	{
-		_putchar ('0');
-		return (0);
-	} else if (n < 0)
-	{
-		_putchar ('-');
-		return (-1);
+		last_digit *= -1;
 	}
 
-	return (0);
+	_putchar('0' + last_digit);
+	return (last_digit);
 
 }
