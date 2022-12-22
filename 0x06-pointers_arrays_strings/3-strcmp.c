@@ -6,12 +6,22 @@
  *
  *@s1: pointer to destination string
  *@s2: pointer to source string
- *@n: number of character to be concatenated
- *Return: pointer to destination string
+ *Return: 0 to destination string
  */
 
-int _strcmp(char *s1, char *s2, int n)
+int _strcmp(char *s1, char *s2)
 {
-	strncmp(s1, s2, n);
-	return (0);
+	int result;
+	int i = 0;
+
+	while (s1[i] == s2[i])
+	{
+		if (s1[i] == '\0' && s2[i] == '\0')
+		{
+			break;
+		}
+		i++;
+	}
+	result = s1[i] - s2[i];
+	return (result);
 }
