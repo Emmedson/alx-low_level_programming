@@ -17,8 +17,7 @@ void print_all(const char * const format, ...)
 	while (format && format[j] != '\0')
 	{
 		switch (format[j])
-		{
-		case 'c':
+		{ case 'c':
 			switch (start)
 			{ case 1: printf(", "); }
 			start = 1;
